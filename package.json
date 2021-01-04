@@ -1,0 +1,12 @@
+{
+  "name": "p3-alignan-jeanbaptiste",
+  "version": "1.0.0",
+  "description": "Projet 3; Ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/_main.scss:./css/style.css",
+    "variables": "sass --watch ./sass/utils/_variables.scss:.sass/_main.scss"
+  },
+  "author": "Jean-Baptiste ALIGNAN",
+  "license": "ISC"
+}
