@@ -1,0 +1,125 @@
+/*Mobile-first (IPhone 6/7/8 iOS Safari 11*/
+
+footer{
+    background-color: $bg-footer;
+    padding-left: 2em;
+    & h3 img{
+        width: 30%;
+        padding-top: 1.5em;
+    }
+}
+
+footer ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    height: 8em;
+}
+
+footer ul li{
+    display: flex;
+    color: white;
+    padding: 0;
+    line-height: 1.75em;
+    background-color: $bg-footer;
+    &::before{
+        display: block;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 0.75em;
+        color: white;
+        width: 2em;
+    }
+}
+
+footer li:first-of-type{
+    font-weight: bolder;
+    &:before{
+        content: "\f2e7";
+    }
+}
+
+footer li:nth-of-type(2){
+    font-weight: bolder;
+    &:before{
+        content: "\f4c4";
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px){
+
+    footer h3 img{
+        width: 20%;
+    }
+
+    footer ul{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        & li{
+            line-height: 4em;
+        }
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+
+    footer h3 img{
+        width: 15%;
+    }
+
+    footer ul{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        & li{
+            line-height: 4em;
+        }
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1919px){
+
+    footer{
+        padding: 0;
+        & h3{
+            margin-left: 6.5em;
+        }
+        & h3 img{
+        width: 13%;
+    }
+    & ul{
+        display: flex;
+        justify-content: space-around;
+        & li{
+            line-height: 4em;
+            font-size: 1.2em;
+        }
+    }
+    }
+
+}
+
+@media screen and (min-width: 1920px){
+
+    footer{
+        padding: 0;
+        & h3{
+            margin-left: 9.5em;
+            padding-top: 2em;
+        }
+        & h3 img{
+        width: 13%;
+    }
+    & ul{
+        display: flex;
+        justify-content: space-around;
+        & li{
+            line-height: 4em;
+            font-size: 1.2em;
+        }
+    }
+    }
+
+}
