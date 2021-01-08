@@ -343,58 +343,84 @@ header li:last-of-type::before {
   }
 }
 /*Mobile-first (IPhone 6/7/8 iOS Safari 11*/
+h1::before {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-size: 0.65em;
+  font-weight: 900;
+  color: #353535;
+}
+
 main {
-  padding-bottom: 3em;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 3.3em;
+}
+main h2 {
+  height: 2em;
+  padding: 1em 0 0 1em;
+  border-radius: 40px 40px 0 0;
+  margin: 0;
+  background-color: #f6f6f6;
+  font-size: 1.7em;
+  font-family: "Shrikhand", cursive;
 }
 
 section {
-  padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 20em;
+  margin-bottom: 2em;
+  background-color: #f6f6f6;
 }
-section h2 {
-  width: 90%;
-  margin-left: 1em;
-}
-
-figure {
-  margin-right: 1.25em;
-  margin-left: 1.25em;
-}
-figure img {
-  object-fit: cover;
-  width: 100%;
-  height: 12.5em;
-  border-radius: 15px 15px 0 0;
-}
-figure img + span {
-  position: absolute;
-  margin-top: 1em;
-  right: 2em;
-  padding: 0.5em 1em;
-  color: #008766;
-  background-color: #99e2d0;
+section h3 {
+  align-self: flex-start;
+  width: 2.5em;
+  margin-bottom: 0.5em;
+  margin-left: 1.3em;
+  padding-bottom: 0.3em;
+  line-height: normal;
+  font-weight: lighter;
+  font-family: "Roboto", sans-serif;
+  border-bottom: 3px solid #99e2d0;
 }
 
-figcaption {
-  position: relative;
-  bottom: 1.2em;
+article {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
   background-color: white;
-  height: 4.5em;
-  padding-left: 1em;
-  border-radius: 0 0 15px 15px;
+  width: 90%;
+  border-radius: 20px;
   box-shadow: -4px 11px 31px -15px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -4px 11px 31px -15px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -4px 11px 31px -15px rgba(0, 0, 0, 0.75);
 }
+article p:last-of-type {
+  margin-right: 1em;
+  font-weight: bolder;
+}
 
-figcaption p {
-  line-height: 0;
-  margin-top: 0;
+h4 {
+  grid-row: 1/2;
+  margin: 0.7em 0 0 0.4em;
+  font-size: 1.2em;
+}
+h4 ~ p {
+  grid-row: 2/3;
+  margin: 0.5em 0 0.7em 0.5em;
 }
 
 .fa-heart {
   position: absolute;
   right: 1em;
-  top: 0.5em;
+  top: 1em;
   font-size: 2em;
   color: grey;
   transition: 1000ms linear;
@@ -410,7 +436,6 @@ figcaption p {
 }
 
 h3 {
-  font-weight: bolder;
   font-size: 1em;
   line-height: 3em;
   margin-bottom: 0;
@@ -636,15 +661,16 @@ footer li:nth-of-type(2):before {
 }
 /*Mobile-first (IPhone 6/7/8 iOS Safari 11*/
 button {
-  width: 14em;
+  width: 12.5em;
   align-self: center;
   text-align: center;
-  margin: 3em 0 3em 0;
-  padding: 1.25em 1.75em;
+  margin: 2em 0 2em 0;
+  padding: 1.25em 0;
   border-radius: 30px;
   box-shadow: -4px 11px 31px -15px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -4px 11px 31px -15px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -4px 11px 31px -15px rgba(0, 0, 0, 0.75);
+  font-size: 1em;
   color: white;
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   border: 0;
@@ -660,9 +686,5 @@ button {
     top: 25em;
   }
 }
-header {
-  position: static;
-  margin-bottom: 3em;
-}
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=pageOne.css.map */

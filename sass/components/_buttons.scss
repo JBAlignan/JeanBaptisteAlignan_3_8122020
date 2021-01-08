@@ -1,14 +1,16 @@
 /*Mobile-first (IPhone 6/7/8 iOS Safari 11*/
 
 button{
-    position: absolute;
-    top: 23em;
+    width: 12.5em;
+    align-self: center;
     text-align: center;
-    padding: 1.25em 1.75em;
+    margin: 2em 0 2em 0;
+    padding: 1.25em 0;
     border-radius: 30px;
     box-shadow: -4px 11px 31px -15px rgba(0,0,0,0.75);
     -webkit-box-shadow: -4px 11px 31px -15px rgba(0,0,0,0.75);
     -moz-box-shadow: -4px 11px 31px -15px rgba(0,0,0,0.75);
+    font-size: 1em;
     color: white;
     background: linear-gradient(175deg, $secondary-color, $primary-color);
     border: 0;

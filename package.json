@@ -4,7 +4,8 @@
   "description": "Projet 3; Ohmyfood",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/_main.scss:./css/style.css"
+    "sass": "sass --watch ./sass/_main.scss:./css/style.css",
+    "sassOne": "sass --watch ./sass/_pageOne.scss:./css/pageOne.css"
   },
   "author": "Jean-Baptiste ALIGNAN",
   "license": "ISC"
