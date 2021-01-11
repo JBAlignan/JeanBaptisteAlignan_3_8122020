@@ -293,19 +293,22 @@ header li:last-of-type::before {
 
   header h2:last-of-type {
     width: 100%;
-    margin-left: auto;
-    text-align: center;
+    margin: auto;
   }
 
   header ul {
     flex-direction: row;
+    margin: auto;
+    margin-top: 5em;
     width: 60%;
     height: auto;
-    border: 1px solid black;
   }
   header ul li {
     align-items: center;
-    border: 1px solid black;
+  }
+
+  main h2 {
+    margin-left: 1em;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -317,6 +320,9 @@ header li:last-of-type::before {
   }
   h1 + p {
     font-size: 1.2em;
+  }
+  h1 + p::before {
+    right: 55em;
   }
 
   h2:first-of-type + p {
@@ -333,13 +339,28 @@ header li:last-of-type::before {
 
   header ul {
     flex-direction: row;
+    margin: auto;
+    margin-top: 5em;
     width: 60%;
     height: auto;
-    border: 1px solid black;
   }
   header ul li {
     align-items: center;
-    border: 1px solid black;
+  }
+  header ul li span {
+    width: 2.5em;
+    height: 2.5em;
+    font-size: 1.1em;
+    top: 33.1em;
+  }
+  header ul li:first-of-type span {
+    left: 20.5em;
+  }
+  header ul li:nth-of-type(2) span {
+    left: 46em;
+  }
+  header ul li:last-of-type span {
+    left: 70.2em;
   }
 }
 /*Mobile-first (IPhone 6/7/8 iOS Safari 11*/
@@ -347,12 +368,12 @@ main {
   padding-bottom: 3em;
 }
 
+h2 {
+  margin-left: 1em;
+}
+
 section {
   padding-top: 1em;
-}
-section h2 {
-  width: 90%;
-  margin-left: 1em;
 }
 
 figure {
@@ -481,6 +502,10 @@ h3 {
   }
 }
 @media screen and (min-width: 1920px) {
+  main h2 {
+    margin-left: 2em;
+  }
+
   section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -494,7 +519,7 @@ h3 {
   figure {
     display: block;
     margin: auto;
-    width: 43em;
+    width: 53em;
   }
 
   figure:first-of-type {
@@ -636,15 +661,16 @@ footer li:nth-of-type(2):before {
 }
 /*Mobile-first (IPhone 6/7/8 iOS Safari 11*/
 button {
-  width: 14em;
+  width: 12.5em;
   align-self: center;
   text-align: center;
-  margin: 3em 0 3em 0;
-  padding: 1.25em 1.75em;
+  margin: 2em 0 2em 0;
+  padding: 1.25em 0;
   border-radius: 30px;
   box-shadow: -4px 11px 31px -15px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -4px 11px 31px -15px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -4px 11px 31px -15px rgba(0, 0, 0, 0.75);
+  font-size: 1em;
   color: white;
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   border: 0;
@@ -663,6 +689,31 @@ button {
 header {
   position: static;
   margin-bottom: 3em;
+}
+
+header div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header div ul {
+  margin-top: 3em;
+}
+
+header div h2:first-of-type {
+  align-self: flex-start;
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+  header div h2:first-of-type {
+    width: 34%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  header h2:first-of-type {
+    width: auto;
+    margin-left: 2.5em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
