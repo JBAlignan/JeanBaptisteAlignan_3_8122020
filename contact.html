@@ -1,0 +1,123 @@
+<!Doctype html>
+
+<html lang="fr">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Open Graph data -->
+        <meta property="og:title" content="Ohmyfood"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="http://www.ohmyfood.com/"/>
+        <meta property="og:image" content="http://example.com/image.jpg"/>
+        <meta property="og:description" content="Ohmyfood"/>
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" content="Ohmyfood">
+        <meta name="twitter:site" content="@publisher_handle">
+        <meta name="twitter:title" content="Ohmyfood">
+        <meta name="twitter:description" content="Ohmyfood">
+        <meta name="twitter:creator" content="Jean-Baptiste ALIGNAN">
+        <!-- Twitter Summary card images must be at least 200x200px -->
+        <meta name="twitter:image" content="http://www.example.com/image.jpg">
+        <link rel="stylesheet" href="css/autoprefixed/contact.css">
+        <!-- Police 'Shrikhand' et 'Roboto' de Google font-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">     
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        <title>Ohmyfood</title>
+        </head>
+
+
+<body>
+
+    <header>
+        <div>
+            <h1>ohmyfood</h1>
+            <a href="index.html"><span class="fas fa-arrow-left"></span></a>
+        </div>
+    </header>
+
+    <main>
+
+        <h2>Nous contacter</h2>
+
+        <div>
+        <form method="POST" action="traitement.php">
+
+            <fieldset>
+                <legend>Contact</legend>
+
+                    <p>
+                        <label for="firstname">Pr&#233;nom* </label>
+                        <input type="text" name="firstname" id="firstname" maxlength="20" required>
+                    </p>
+
+                    <p>
+                        <label for="name">Nom* </label>
+                        <input type="text" name="name" id="name" maxlength="20" required>
+                    </p>
+
+                    <p>
+                        <label for="firstname">T&#233;l&#233;phone </label>
+                        <input type="tel" name="tel" id="tel">
+                    </p>
+
+                    <p>
+                        <label for="firstname">Courriel* </label>
+                        <input type="email" name="email" id="email" required>
+                    </p>
+
+                    <div>
+                        <p>Vous êtes:</p>
+                        <div>
+                            <input type="radio" name="customer" value="individual" id="individual"><label for="individual">Un particulier</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="customer" value="professionnal" id="professionnal"><label for="professionnal">Un professionnel</label>
+                        </div>
+                    </div>
+
+                    <p>
+                        <textarea id="message" placeholder="Votre message" required></textarea>
+                    </p>
+
+                    <p>
+                        <input type="submit" value="Envoyer">
+                    </p>
+
+            </fieldset>
+
+        </form>
+
+        <aside>
+
+            <h2>Ohmyfood</h2>
+
+            <h3>Adresse postale</h3>
+            <p>28, rue de l'Exemple, 75013, Paris</p>
+
+            <h3>T&#233;l&#233;phone</h3>
+            <p>00 00 00 00 00</p>
+            
+        </aside>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <h3>ohmyfood</h3>
+        <ul>
+            <li>Proposer un restaurant</li>
+            <li>Devenir partenaire</li>
+            <li><a href="legalNotice.html">Mentions légales</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </footer>
+
+</body>
+
+        </html>

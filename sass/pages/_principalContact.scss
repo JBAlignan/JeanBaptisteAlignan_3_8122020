@@ -1,0 +1,160 @@
+/*Mobile-first (IPhone 6/7/8 iOS Safari 11*/
+
+main h2{
+    text-align: center;
+}
+
+fieldset{
+    border: 3px solid $third-color;
+    display: flex;
+    flex-direction: column;
+    & legend{
+        font-size: 1.5em;
+    }
+    & p{
+        display: flex;
+        justify-content: space-between;      
+        }
+}
+
+input{
+    border: 1px solid black;
+}
+
+textarea{
+    width: 75%;
+    height: 6em;
+    box-shadow: none;
+}
+
+input[type="submit"]{
+    width: 6em;
+    font-size: 1em;
+    color: white;
+    background-color: $bg-footer;
+}
+
+input[required]{
+    box-shadow: none;
+}
+
+aside{
+    margin-top: 1em;
+    padding: 1em 0 1em 1em;
+    background-color:  #ffffff;
+    box-shadow: 0px 7px 11px -3px rgba(0,0,0,0.53);
+    -webkit-box-shadow: 0px 7px 11px -3px rgba(0,0,0,0.53);
+    -moz-box-shadow: 0px 7px 11px -3px rgba(0,0,0,0.53);
+    & h2{
+        font-family: 'Shrikhand', cursive;
+    }
+}
+
+footer h3{
+    font-weight: bolder;
+    line-height: 3em;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px){
+    
+    legend{
+        margin-left: 2.7em;
+    }
+
+    fieldset{
+        & p{
+        align-self: center;
+        width: 37em;
+        }
+        & div{
+            align-self: center;
+            width: 37em;
+            margin: 1em 0;
+            & p{
+                justify-content: flex-start;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+
+    main{
+        flex-direction: column;
+    }
+    
+    legend{
+        margin-left: 8em;
+    }
+
+    fieldset{
+        & p{
+        align-self: center;
+        width: 37em;
+        }
+        & div{
+        align-self: center;
+        width: 37em;
+        margin: 1em 0;
+        & p{
+            justify-content: flex-start;
+        }
+        }
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1919px){
+
+    main > div{
+        display: flex;
+        justify-content: space-around;
+        & form{
+            width: 50%;
+        }
+        & aside{
+            width: 20%;
+        }
+    }
+
+    form{
+    & p{
+        width: 75%;
+    }
+    & div{
+        align-self: center;
+        width: 37em;
+        margin: 1em 0;
+    }
+}
+}
+
+@media screen and (min-width: 1919px){
+
+
+    main{
+        margin-bottom: 8em;
+    }
+    main > div{
+        display: flex;
+        justify-content: space-around;
+        & form{
+            width: 50%;
+        }
+        & aside{
+            width: 20%;
+        }
+    }
+
+    form{
+    & p{
+        width: 75%;
+    }
+    & div{
+        align-self: center;
+        width: 37em;
+        margin: 1em 0;
+    }
+}
+}

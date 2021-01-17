@@ -5,7 +5,20 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./sass/_main.scss:./css/style.css",
-    "sassOne": "sass --watch ./sass/_pageOne.scss:./css/pageOne.css"
+    "sassOne": "sass --watch ./sass/_restaurantPage.scss:./css/francePage.css",
+    "sassTwo": "sass --watch ./sass/_restaurantPage.scss:./css/notePage.css",
+    "sassThree": "sass --watch ./sass/_restaurantPage.scss:./css/palettePage.css",
+    "sassFour": "sass --watch ./sass/_restaurantPage.scss:./css/sensPage.css",
+    "sassContact": "sass --watch ./sass/_contactPage.scss:./css/contact.css",
+    "sassLegalNotice": "sass --watch ./sass/_legalNotice.scss:./css/legalNotice.css",
+
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/autoprefixed",
+    "prefixOne": "postcss ./css/francePage.css --use autoprefixer -d ./css/autoprefixed",
+    "prefixTwo": "postcss ./css/notePage.css --use autoprefixer -d ./css/autoprefixed",
+    "prefixThree": "postcss ./css/palettePage.css --use autoprefixer -d ./css/autoprefixed",
+    "prefixFour": "postcss ./css/sensPage.css --use autoprefixer -d ./css/autoprefixed",
+    "prefixContact": "postcss ./css/contact.css --use autoprefixer -d ./css/autoprefixed",
+    "prefixLegalNotice": "postcss ./css/legalNotice.css --use autoprefixer -d ./css/autoprefixed"
   },
   "author": "Jean-Baptiste ALIGNAN",
   "license": "ISC"

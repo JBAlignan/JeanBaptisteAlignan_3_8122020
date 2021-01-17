@@ -1,0 +1,83 @@
+/*Mobile-first (IPhone 6/7/8 iOS Safari 11*/
+
+header, main, footer{
+    opacity: 1;
+    animation: opacity-homepage 3000ms step-end;
+}
+
+@keyframes opacity-homepage{
+    0%{
+        opacity: 0.3;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+body::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 15.5em;
+    content:"\f021";
+    position: absolute;
+    color: $primary-color;
+    top: 0.5em;
+    left: 0.25em;
+    opacity: 1;
+    z-index: 10;
+    animation: loading-spinner 3000ms forwards;
+}
+
+@keyframes loading-spinner{
+    0%{
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    99%{
+        opacity: 0.9;
+    }
+    100%{
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px){
+
+    body::before{
+    font-size: 29.5em;
+    top: 0.2em;
+    left: 0.3em;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+
+    body::before{
+        font-size: 29.5em;
+        top: 0.2em;
+        left: 0.6em;
+        }
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1919px){
+
+    body::before{
+        font-size: 29.5em;
+        top: 0.2em;
+        left: 1.1em;
+        }
+
+}
+
+@media screen and (min-width: 1920px){
+
+    body::before{
+        font-size: 38.5em;
+        top: 0.2em;
+        left: 1.1em;
+        }
+
+}

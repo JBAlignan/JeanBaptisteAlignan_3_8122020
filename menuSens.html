@@ -8,7 +8,7 @@
         <!-- Open Graph data -->
         <meta property="og:title" content="Ohmyfood"/>
         <meta property="og:type" content="website"/>
-        <meta property="og:url" content="http://www.reservia.com/"/>
+        <meta property="og:url" content="http://www.ohmyfood.com/"/>
         <meta property="og:image" content="http://example.com/image.jpg"/>
         <meta property="og:description" content="Ohmyfood"/>
         <!-- Twitter Card data -->
@@ -19,10 +19,12 @@
         <meta name="twitter:creator" content="Jean-Baptiste ALIGNAN">
         <!-- Twitter Summary card images must be at least 200x200px -->
         <meta name="twitter:image" content="http://www.example.com/image.jpg">
-        <link rel="stylesheet" href="style.css">
-        <!-- Police 'Roboto' de Google font-->
+        <link rel="stylesheet" href="css/autoprefixed/sensPage.css">
+        <!-- Police 'Shrikhand' et 'Roboto' de Google font-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
         <title>Ohmyfood</title>
 
@@ -31,88 +33,133 @@
     <body>
 
         <header>
-            <h1>Logo</h1>
+            <div>
+                <h1>ohmyfood</h1>
+                <a href="index.html"><span class="fas fa-arrow-left"></span></a>
+            </div>
 
-            <img src="">
+            <figure>
+                <img src="maquettesOhmyfood/maquettesOhmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+            </figure>
 
-                <h2>Le délice des sens</h2>
         </header>
 
-        <section>
-            <h3>ENTR&#201;ES</h3>
-                <article>
-                    <h4>Tartare de thon</h4>
-                    <p>Assaisonnée au yuzu</p>
-                    <p>25&euro;</p>
-                </article>
+        <main>
+            <h2>&#192; la fran&#231;aise</h2>
+            <span class="far fa-heart"></span>
 
-                <article>
-                    <h4>Bouchée de homard croustillant</h4>
-                    <p>Et sa farandole de petits légumes</p>
-                    <p>35&euro;</p>
-                </article>
+            <section>
 
-                <article>
-                    <h4>Velouté de cèpes</h4>
-                    <p>Aux truffes</p>
-                    <p>20&euro;</p>
-                </article>
-        </section>
+                <h3>ENTR&#201;ES</h3>
+                    <div>
+                        <article>
+                            <h4>Tartare de thon</h4>
+                            <p>Assaisonn&#233;e au yuzu</p>
+                            <p>25&euro;</p>
+                            <span class="fas fa-check-circle"></span>
+                        </article>
+                    </div>
 
-        <section>
-            <h3>PLATS</h3>
-                <article>
-                    <h4>Poulet rôti aux herbes de provence</h4>
-                    <p>Et sa crème aux truffes</p>
-                    <p>40&euro;</p>
-                </article>
+                    <div>
+                        <article>
+                            <h4>Bouch&#233;e de homard croustillant</h4>
+                            <p>Et sa farandole de petits l&#233;gumes</p>
+                            <p>35&euro;</p>
+                            <span class="fas fa-check-circle"></span>
+                        </article>
+                    </div>
 
-                <article>
-                    <h4>Langouste rôtie</h4>
-                    <p>Et ses légumes de saison</p>
-                    <p>35&euro;</p>
-                </article>
+                    <div>
+                        <article>
+                            <h4>Velout&#233; de c&#232;pes</h4>
+                            <p>Aux truffes</p>
+                            <p>20&euro;</p>
+                            <span class="fas fa-check-circle"></span>
+                        </article>
+                    </div>
 
-                <article>
-                    <h4>Queue de boeuf angus</h4>
-                    <p>Et sa purée de panais</p>
-                    <p>44&euro;</p>
-                </article>
-        </section>
+            </section>
 
-        <section>
-            <h3>DESSERTS</h3>
-                <article>
-                    <h4>Farandole de desserts</h4>
-                    <p>Du chef</p>
-                    <p>18&euro;</p>
-                </article>
+            <section>
 
-                <article>
-                    <h4>Crème brûlée</h4>
-                    <p>Revisitée</p>
-                    <p>22&euro;</p>
-                </article>
+                <h3>PLATS</h3>
+                    <div>
+                        <article>
+                            <h4>Poulet r&#244;ti aux herbes de provence</h4>
+                            <p>Et sa cr&#232;me aux truffes</p>
+                            <p>40&euro;</p>
+                            <span class="fas fa-check-circle"></span>
+                        </article>
+                    </div>
 
-                <article>
-                    <h4>Tiramisu</h4>
-                    <p>&#192; la noisette</p>
-                    <p>23&euro;</p>
-                </article>
-        </section>
+                    <div>
+                        <article>
+                            <h4>Langouste r&#244;tie</h4>
+                            <p>Et ses l&#232;gumes de saison</p>
+                            <p>35&euro;</p>
+                            <span class="fas fa-check-circle"></span>
+                        </article>
+                    </div>
 
-        <button>Commander</button>
+                    <div>
+                        <article>
+                            <h4>Queue de boeuf angus</h4>
+                            <p>Et sa pur&#232;e de panais</p>
+                            <p>44&euro;</p>
+                            <span class="fas fa-check-circle"></span>
+                        </article>
+                    </div>
+
+            </section>
+
+            <section>
+
+                <h3>DESSERTS</h3>
+                    <div>
+                        <article>
+                            <h4>Farandole de desserts</h4>
+                            <p>Du chef</p>
+                            <p>18&euro;</p>
+                            <span class="fas fa-check-circle"></span>
+                        </article>
+                    </div>
+
+                    <div>
+                        <article>
+                            <h4>Cr&#233;me brûl&#232;e</h4>
+                            <p>Revisit&#232;e</p>
+                            <p>22&euro;</p>
+                            <span class="fas fa-check-circle"></span>
+                        </article>
+                    </div>
+
+                    <div>
+                        <article>
+                            <h4>Tiramisu</h4>
+                            <p>&#192; la noisette</p>
+                            <p>23&euro;</p>
+                            <span class="fas fa-check-circle"></span>
+                        </article>
+                    </div>
+
+            </section>
+
+            <a href=""  class="button">Commander</a>
+        </main>
+
+
 
         <footer>
 
-            <h3></h3>
+           <h3>ohmyfood</h3>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Proposer un restaurant</li>
+                <li>Devenir partenaire</li>
+                <li><a href="legalNotice.html">Mentions l&#233;gales</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-
+    
         </footer>
+
 
 </html>

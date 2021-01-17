@@ -1,0 +1,270 @@
+/*Mobile-first (IPhone 6/7/8 iOS Safari 11*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 3.3em;
+    & h2{
+        height: 2em;
+        padding: 1em 0 0 1em;
+        border-radius: 40px 40px 0 0;
+        margin: 0;
+        background-color: $bg-colour-nav-main;
+        font-size: 1.7em;
+        font-family: 'Shrikhand', cursive;
+    }
+    & .fa-heart{
+        position: absolute;
+        right: 1em;
+        top: 1em;
+        font-size: 2em;
+        color: grey;
+        &:hover{
+            content: "\f004";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            font-size: 2em;
+            color: #d16bdb;
+            transition: 300ms linear;
+        }
+    }
+}
+
+section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 20em;
+    margin-bottom: 2em;
+    background-color: $bg-colour-nav-main;
+    & div{
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        border-radius: 20px;
+        width: 90%;
+        background-color: $third-color;
+        opacity: 0;
+        box-shadow: -4px 11px 31px -15px rgba(0,0,0,0.75);
+        -webkit-box-shadow: -4px 11px 31px -15px rgba(0,0,0,0.75);
+        -moz-box-shadow: -4px 11px 31px -15px rgba(0,0,0,0.75);
+        transition: box-shadow 200ms linear; /*Animation de l'opacité des div et contenus jusqu'à la ligne 59; key frames ligne 136*/
+        animation: div-apparition 1000ms;
+        animation-fill-mode: forwards;
+        animation-delay: 500ms;
+    &:nth-of-type(2){
+        animation-delay: 600ms;
+    }
+    &:last-of-type{
+        animation-delay: 700ms;
+    }
+        &:hover{
+            box-shadow: -3px 20px 31px -15px rgba(0,0,0,0.75);
+            -webkit-box-shadow: -3px 20px 31px -15px rgba(0,0,0,0.75);
+            -moz-box-shadow: -3px 20px 31px -15px rgba(0,0,0,0.75);
+        }
+    }
+    & article{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        background-color: white;
+        width: 100%;
+        color: black;
+        transition: width 0.2s linear;
+        &  h4, p:first-of-type{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        & h4{
+            grid-row: 1 / 2;
+            margin: 0.7em 0 0 0.4em;
+            font-size: 1.2em;
+            & ~ p{
+                grid-row: 2 / 3;
+                margin: 0.5em 0 0.7em 0.5em;
+            }
+        }
+        & span{
+            position: absolute;
+            font-size: 1.7em;
+            color: white;
+            top: 0.8em;
+            right: -1.7em;
+        }
+        &:hover span{
+            transition: transform 0.2s linear;
+            transform: rotate(360deg);   
+        }
+        &:hover{
+            width: 85%;
+        }
+        & p:last-of-type{
+            margin-right: 1em;
+            font-weight: bolder;
+        }
+    }
+    & h3{
+        align-self: flex-start;
+        width: 2.5em;
+        margin-bottom: 0.5em;
+        margin-left: 1.3em;
+        padding-bottom: 0.3em;
+        line-height: normal;
+        font-weight: lighter;
+        font-family: 'Roboto', sans-serif;
+        border-bottom: 3px solid $validation-color;
+    }
+}
+
+#heightFourOptions{
+    height: 25.5em;
+}
+
+@keyframes div-apparition{
+    0%{
+        opacity: 0;
+        top: 1em;
+    }
+    100%{
+        opacity: 1;
+        top: 0;
+    }
+}
+
+h3{ /*Titre du Footer*/
+    font-size: 1em;
+    line-height: 3em;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 400px) and (max-width: 767px){
+
+    h1::before{
+        font-size: 0.9em;
+    }
+
+    main > h2{
+        font-size: 2em;
+    }
+
+    section{
+        height: 25em;
+        & article{
+            width: 75%;
+            font-size: 1.2em;
+        }
+        & h3{
+            margin-left: 4em;
+            font-size: 1.5em;
+        }
+    }
+
+    #heightFourOptions{
+        height: 31.5em;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+    h1::before{
+        font-size: 0.9em;
+    }
+
+    main h2{
+        font-size: 2em;
+    }
+
+    .fa-heart{
+        top: 1.2em;
+    }
+
+    section{
+        height: 25em;
+        & h3{
+            font-size: 1.5em;
+        }
+        & article{
+            width: 100%;
+            font-size: 1.2em;
+        }
+    }
+
+    #heightFourOptions{
+        height: 31.5em;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1919px){
+
+    h1::before{
+        top: 0.8em;
+        font-size: 0.9em;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        & h2{
+            grid-column: 1 / 4;
+            grid-row: 1 / 2;
+            font-size: 2em;
+        }
+        & section:first-of-type{
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+        & section:nth-of-type(2){
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+        & section:last-of-type{
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px){
+
+
+    h1::before{
+        top: 0.9em;
+        font-size: 1em;
+    }
+    
+    main{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        & h2{
+            grid-column: 1 / 4;
+            grid-row: 1 / 2;
+            font-size: 2em;
+        }
+        & section{
+            &:first-of-type{
+                grid-column: 1 / 2;
+                grid-row: 2 / 3;
+            }
+            &:nth-of-type(2){
+                grid-column: 2 / 3;
+                grid-row: 2 / 3;
+            }
+            &:last-of-type{
+                grid-column: 3 / 4;
+                grid-row: 2 / 3;
+            }
+            & h3{
+                font-size: 1.2em;
+            }
+            & span{
+                font-size: 2em;
+            }
+        }   
+    }
+}

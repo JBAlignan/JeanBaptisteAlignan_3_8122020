@@ -1,48 +1,41 @@
 
 /*Mobile-first (IPhone 6/7/8 iOS Safari 11*/
 
-body{
-    background-color: $bg-colour-nav-main;
-}
-
 header{
     position: relative;
     display: flex;
     flex-direction: column;
+    & div{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
 }
 
 h1{
-  position: relative;
-  margin: 0;
-  box-shadow: 0px 7px 11px -3px rgba(0,0,0,0.53);
-  -webkit-box-shadow: 0px 7px 11px -3px rgba(0,0,0,0.53);
-  -moz-box-shadow: 0px 7px 11px -3px rgba(0,0,0,0.53);
+    position: relative;
+    margin: 0;
+    width: 100%;
+    font-family: "Shrikhand", cursive;
+    text-align: center;
+    line-height: 2em;
+    box-shadow: 0px 7px 11px -3px rgba(0,0,0,0.53);
+    -webkit-box-shadow: 0px 7px 11px -3px rgba(0,0,0,0.53);
+    -moz-box-shadow: 0px 7px 11px -3px rgba(0,0,0,0.53);
+
 }
 
-h1 img{
-  display: block;
-  width: 45%;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0.5em 0;
+.fa-arrow-left{
+    position: absolute;
+    top: 0.75em;
+    left: 0.5em;
+    font-size: 1.65em;
+    font-weight: 900;
+    color: #353535;
 }
 
-h1 + p{
-  margin: 0;
-  width: 100%;
-  padding-top: 1.3em;
-  height: 2.5em;
-  text-align: center;
-  font-weight: bolder;
-  background-color: rgb(236, 236, 236);
-  &:before{
-      position: absolute;
-      right: 16em;
-      font-family: "Font Awesome 5 Free";
-      content: "\f3c5";
-      font-weight: 900;
-      font-size: 1em;
-  }
+body{
+    background-color: $bg-colour-nav-main;
 }
 
 figure{
@@ -54,87 +47,8 @@ figure{
     }
 }
 
-header h2:first-of-type{
-  margin: 0;
-  width: 75%;
-  align-self: center;
-  font-weight: bold;
-  text-align: center;
-  padding-top: 1em;
-  + p{
-      margin-top: 0;
-      padding: 1em 1em 0 1em;
-      text-align: center;
-      background-color: #f7f7f7;
-  }
-}
-
-header div {
-    background-color: white;
-    padding-bottom: 3em;
-}
-
-h2:nth-of-type(2){
-  align-self: flex-start;
-  margin-left: 1em;
-}
-
-header ul{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 19em;
-  padding-left: 0;
-  & li{
-      list-style-type: none;
-      font-weight: bolder;
-      border-radius: 25px;
-      padding: 2em 3.5em;
-      background-color: $bg-colour-nav-main;
-      box-shadow: -4px 11px 31px -15px rgba(0,0,0,0.75);
-      -webkit-box-shadow: -4px 11px 31px -15px rgba(0,0,0,0.75);
-      -moz-box-shadow: -4px 11px 31px -15px rgba(0,0,0,0.75);
-      &:hover{
-          background-color:$operation-hover;
-      }
-      &:hover:before{
-          color: $primary-color;
-      }
-      & span{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 1.5em;
-          height: 1.5em;
-          position: absolute;
-          left: 2em;
-          border-radius: 50%;
-          color: white;
-          background-color: $primary-color;
-      }
-  }
-}
-
-header li::before{
-  position: absolute;
-  left: 4.5em;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 1em;
-  color: grey;
-}
-
-header li:first-of-type::before{
-  content: "\f3cd";
-}
-
-header li:nth-of-type(2)::before{
-  content: "\f0ca";
-}
-
-header li:last-of-type::before{
-  content: "\f54e";
+#imgNoteRestaurant{
+    height: 16em;
 }
 
 @media screen and (min-width: 400px) and (max-width: 768px){
@@ -143,62 +57,15 @@ header li:last-of-type::before{
       width: 100%;
       & + p{
           font-size: 1.25em;
-      &:before{
-          position: absolute;
-          right: 23.5em;
-          font-family: "Font Awesome 5 Free";
-          content: "\f3c5";
-          font-weight: 900;
-          font-size: 1em;
-          }
       }
   }
 
-  h2:first-of-type + p{
-          width: 100%;
-      }
-
-  header ul:first-of-type{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      width: 90%;
-      height: 6em;
-      & li{
-          width: 7em;
-          padding-right: 0.5em;
-          padding-left: 5em;
-      }
+  .fa-arrow-left{
+      top: 0.5em;
   }
 
-  header li:first-of-type::before{
-      font-size: 1.5em;
-      margin-left: -1.5em;
-  }
-
-  header li:first-of-type span{
-      margin-top: -2.75em;
-      margin-left: 6em;  
-      }
-
-  header li:nth-of-type(2)::before{
-      margin-left: 8.5em;
-      font-size: 1.5em;
-  }
-
-  header li:nth-of-type(2) span{
-      margin-top: -2.75em;
-      margin-left: 21.5em;
-  }
-
-  header li:last-of-type::before{
-      margin-left: 18.5em;
-      font-size: 1.5em;
-  }
-
-  header li:last-of-type span{
-      margin-top: -2.75em;
-      margin-left: 36.5em;
+  header figure{
+      height: 20em;
   }
 
 }
@@ -209,14 +76,6 @@ header li:last-of-type::before{
       width: 100%;
       & + p{
           font-size: 1.25em;
-      &:before{
-          position: absolute;
-          right: 23.5em;
-          font-family: "Font Awesome 5 Free";
-          content: "\f3c5";
-          font-weight: 900;
-          font-size: 1em;
-          }
       }
   }
 
@@ -228,53 +87,14 @@ header li:last-of-type::before{
       right: 30.5em;
   }
 
+  header figure{
+      height: 23em;
+  }
+
   h2:first-of-type + p{
           width: 100%;
           font-size: 1.25em;
       }
-
-  header ul:first-of-type{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      width: 90%;
-      height: 6em;
-      & li{
-          width: 10em;
-          padding-right: 0em;
-          padding-left: 6em;
-      }
-  }
-
-  header li:first-of-type::before{
-      font-size: 1.5em;
-      margin-left: -0.5em;
-  }
-
-  header li:first-of-type span{
-      margin-top: -2.75em;
-      margin-left: 8.5em;  
-      }
-
-  header li:nth-of-type(2)::before{
-      margin-left: 13em;
-      font-size: 1.5em;
-  }
-
-  header li:nth-of-type(2) span{
-      margin-top: -2.75em;
-      margin-left: 29.5em;
-  }
-
-  header li:last-of-type::before{
-      margin-left: 27em;
-      font-size: 1.5em;
-  }
-
-  header li:last-of-type span{
-      margin-top: -2.75em;
-      margin-left: 50em;
-  }
 
 }
 
@@ -347,4 +167,3 @@ header li:last-of-type::before{
         }
     }
   }
-
