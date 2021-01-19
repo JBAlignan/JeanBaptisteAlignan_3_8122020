@@ -276,7 +276,7 @@ footer a {
   }
 }
 /*Mobile-first (IPhone 6/7/8 iOS Safari 11*/
-.button {
+#button {
   text-decoration: none;
   align-self: center;
   text-align: center;
@@ -290,7 +290,11 @@ footer a {
   color: white;
   background: linear-gradient(175deg, #FF79DA, #9356DC);
 }
-.button:hover {
+#button:hover {
+  box-shadow: -4px 11px 31px -5px #000000;
+  -moz-box-shadow: -4px 11px 31px -5px #000000;
+  -webkit-box-shadow: -4px 11px 31px -5px #000000;
+  -o-box-shadow: -4px 11px 31px -5px #000000;
   opacity: 0.75;
 }
 

@@ -219,7 +219,7 @@ section div {
   -webkit-box-shadow: -4px 11px 31px -15px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -4px 11px 31px -15px rgba(0, 0, 0, 0.75);
   transition: box-shadow 200ms linear;
-  /*Animation de l'opacité des div et contenus jusqu'à la ligne 59; key frames ligne 136*/
+  /*Animation de l'opacité des div et contenus jusqu'à la ligne 59; key frames ligne 129*/
   animation: div-apparition 1000ms;
   animation-fill-mode: forwards;
   animation-delay: 500ms;
@@ -433,7 +433,10 @@ footer {
 footer h3 {
   font-family: "Shrikhand", cursive;
   font-size: 1.2em;
+  font-weight: bolder;
   color: white;
+  line-height: 3em;
+  margin-bottom: 0;
 }
 
 footer ul {
@@ -533,7 +536,7 @@ footer a {
   }
 }
 /*Mobile-first (IPhone 6/7/8 iOS Safari 11*/
-.button {
+#button {
   text-decoration: none;
   align-self: center;
   text-align: center;
@@ -547,7 +550,11 @@ footer a {
   color: white;
   background: linear-gradient(175deg, #FF79DA, #9356DC);
 }
-.button:hover {
+#button:hover {
+  box-shadow: -4px 11px 31px -5px #000000;
+  -moz-box-shadow: -4px 11px 31px -5px #000000;
+  -webkit-box-shadow: -4px 11px 31px -5px #000000;
+  -o-box-shadow: -4px 11px 31px -5px #000000;
   opacity: 0.75;
 }
 

@@ -401,7 +401,10 @@ footer {
 footer h3 {
   font-family: "Shrikhand", cursive;
   font-size: 1.2em;
+  font-weight: bolder;
   color: white;
+  line-height: 3em;
+  margin-bottom: 0;
 }
 
 footer ul {
@@ -501,7 +504,7 @@ footer a {
   }
 }
 /*Mobile-first (IPhone 6/7/8 iOS Safari 11*/
-.button {
+a[id] {
   text-decoration: none;
   align-self: center;
   text-align: center;
@@ -515,28 +518,32 @@ footer a {
   color: white;
   background: linear-gradient(175deg, #FF79DA, #9356DC);
 }
-.button:hover {
+a[id]:hover {
+  box-shadow: -4px 11px 31px -5px #000000;
+  -moz-box-shadow: -4px 11px 31px -5px #000000;
+  -webkit-box-shadow: -4px 11px 31px -5px #000000;
+  -o-box-shadow: -4px 11px 31px -5px #000000;
   opacity: 0.75;
 }
 
 @media screen and (min-width: 400px) and (max-width: 768px) {
-  a {
+  a[id] {
     font-size: 1.2em;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  a {
+  a[id] {
     font-size: 1.2em;
   }
 }
 @media screen and (min-width: 1025px) and (max-width: 1919px) {
-  a {
+  a[id] {
     grid-column: 2/3;
     justify-self: center;
   }
 }
 @media screen and (min-width: 1920px) {
-  a {
+  a[id] {
     grid-column: 2/3;
     justify-self: center;
   }
@@ -573,13 +580,16 @@ body::before {
   0% {
     transform: rotate(0deg);
     opacity: 1;
+    z-index: 10;
   }
   99% {
     opacity: 0.9;
+    z-index: 10;
   }
   100% {
     transform: rotate(360deg);
     opacity: 0;
+    z-index: -10;
   }
 }
 @media screen and (min-width: 400px) and (max-width: 768px) {
