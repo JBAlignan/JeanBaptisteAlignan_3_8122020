@@ -51,8 +51,7 @@ section{
         box-shadow: -4px 11px 31px -15px rgba(0,0,0,0.75);
         -webkit-box-shadow: -4px 11px 31px -15px rgba(0,0,0,0.75);
         -moz-box-shadow: -4px 11px 31px -15px rgba(0,0,0,0.75);
-        transition: box-shadow 200ms linear; /*Animation de l'opacité des div et contenus jusqu'à la ligne 59; key frames ligne 129*/
-        animation: div-apparition 1000ms;
+        animation: div-apparition 1000ms;   /*Animation de l'opacité des div et contenus jusqu'à la ligne 59; key frames ligne 124*/
         animation-fill-mode: forwards;
         animation-delay: 500ms;
     &:nth-of-type(2){
@@ -122,10 +121,6 @@ section{
     }
 }
 
-#heightFourOptions{
-    height: 25.5em;
-}
-
 @keyframes div-apparition{
     0%{
         opacity: 0;
@@ -136,6 +131,12 @@ section{
         top: 0;
     }
 }
+
+#heightFourOptions{
+    height: 25.5em;
+}
+
+
 
 h3{ /*Titre du Footer*/
     font-size: 1em;
