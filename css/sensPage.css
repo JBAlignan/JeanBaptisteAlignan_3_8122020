@@ -194,7 +194,7 @@ main .fa-heart:hover {
   font-weight: 900;
   font-size: 2em;
   color: #d16bdb;
-  transition: 300ms linear;
+  transition: color 300ms linear;
 }
 
 section {
