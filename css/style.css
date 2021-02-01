@@ -73,6 +73,10 @@ figure img {
   header figure {
     height: 20em;
   }
+
+  #imgNoteRestaurant {
+    height: 100%;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   h1 {
@@ -84,6 +88,10 @@ figure img {
 
   h1 img {
     width: 35%;
+  }
+
+  #imgNoteRestaurant {
+    height: 100%;
   }
 
   h1 + p::before {
@@ -105,6 +113,10 @@ figure img {
   }
   h1 img {
     width: 18%;
+  }
+
+  #imgNoteRestaurant {
+    height: 100%;
   }
 
   figure {
@@ -143,6 +155,10 @@ figure img {
   figure {
     width: 100%;
     height: 26em;
+  }
+
+  #imgNoteRestaurant {
+    height: 100%;
   }
 
   h2 + p {
@@ -255,6 +271,11 @@ h3 {
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+  figure > span {
+    bottom: 11em;
+    left: 38em;
+  }
+
   section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -334,6 +355,7 @@ h3 {
     grid-row: 2/3;
   }
   figure > span {
+    bottom: 11.5em;
     left: 38.5em;
   }
 

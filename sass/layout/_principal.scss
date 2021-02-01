@@ -92,6 +92,11 @@ h3{
 
 @media screen and (min-width: 769px) and (max-width: 1024px){
 
+    figure > span{
+        bottom: 11em;
+        left: 38em;
+    }
+
     section{
         display: grid;
         grid-template-columns: repeat(2, 1fr);  
@@ -172,6 +177,7 @@ h3{
             grid-row: 2 / 3;
         }
         & > span{
+            bottom: 11.5em;
             left: 38.5em;
         }
     }
