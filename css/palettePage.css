@@ -28,8 +28,6 @@ h1 {
   text-align: center;
   line-height: 2em;
   box-shadow: 0px 7px 11px -3px rgba(0, 0, 0, 0.53);
-  -webkit-box-shadow: 0px 7px 11px -3px rgba(0, 0, 0, 0.53);
-  -moz-box-shadow: 0px 7px 11px -3px rgba(0, 0, 0, 0.53);
 }
 
 .fa-arrow-left {
@@ -232,8 +230,6 @@ section div {
   background-color: #99E2D0;
   opacity: 0;
   box-shadow: -4px 11px 31px -15px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: -4px 11px 31px -15px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -4px 11px 31px -15px rgba(0, 0, 0, 0.75);
   animation: div-apparition 1000ms;
   /*Animation de l'opacité des div et contenus jusqu'à la ligne 59; key frames ligne 124*/
   animation-fill-mode: forwards;
@@ -247,8 +243,6 @@ section div:last-of-type {
 }
 section div:hover {
   box-shadow: -3px 20px 31px -15px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: -3px 20px 31px -15px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -3px 20px 31px -15px rgba(0, 0, 0, 0.75);
 }
 section article {
   position: relative;
@@ -560,16 +554,11 @@ a[id] {
   padding: 1.25em 0;
   border-radius: 30px;
   box-shadow: -4px 11px 31px -15px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: -4px 11px 31px -15px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -4px 11px 31px -15px rgba(0, 0, 0, 0.75);
   color: white;
   background: linear-gradient(175deg, #FF79DA, #9356DC);
 }
 a[id]:hover {
   box-shadow: -4px 11px 31px -5px #000000;
-  -moz-box-shadow: -4px 11px 31px -5px #000000;
-  -webkit-box-shadow: -4px 11px 31px -5px #000000;
-  -o-box-shadow: -4px 11px 31px -5px #000000;
   opacity: 0.75;
 }
 

@@ -9,15 +9,10 @@ a[id]{
     padding: 1.25em 0;
     border-radius: 30px;
     box-shadow: -4px 11px 31px -15px rgba(0,0,0,0.75);
-    -webkit-box-shadow: -4px 11px 31px -15px rgba(0,0,0,0.75);
-    -moz-box-shadow: -4px 11px 31px -15px rgba(0,0,0,0.75);
     color: white;
     background: linear-gradient(175deg, $secondary-color, $primary-color);
     &:hover{
         box-shadow: -4px 11px 31px -5px #000000;
-        -moz-box-shadow: -4px 11px 31px -5px #000000;
-        -webkit-box-shadow: -4px 11px 31px -5px #000000;
-        -o-box-shadow: -4px 11px 31px -5px #000000;
         opacity: 0.75;
     }
 }
@@ -26,7 +21,7 @@ a[id]{
 
     a[id]{
         font-size: 1.2em;
-    }
+    } 
     
 }
 

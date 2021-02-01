@@ -68,8 +68,6 @@ header div{
         border-radius: 25px;
         background-color: $bg-colour-nav-main;
         box-shadow: -4px 11px 31px -15px rgba(0,0,0,0.75);
-        -webkit-box-shadow: -4px 11px 31px -15px rgba(0,0,0,0.75);
-        -moz-box-shadow: -4px 11px 31px -15px rgba(0,0,0,0.75);
         &:hover{
             background-color: $operation-hover;
         }
